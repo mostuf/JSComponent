@@ -1,0 +1,59 @@
+#alert {
+    display: none;
+    padding: 10px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 8px;
+    max-width: 40%;
+    font-size: 1.4rem;
+    padding-right: 35px;
+    text-align: justify;
+}
+
+@media screen and (min-width: 780px) {
+    #alert {
+        max-width: 20%;
+    }
+}
+
+#alert .fa-times {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#alert.show {
+    display: block;
+}
+
+#alert.hide {
+    display: block;
+    animation: hide 3s forwards;
+}
+
+#alert.message {
+    background-color: #1976d2;
+    color: white;
+}
+
+#alert.error {
+    background-color: #b71c1c;
+    color: white;
+}
+
+#alert.warning {
+    background-color: #f9a825;
+    color: #303030;
+}
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
