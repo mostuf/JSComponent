@@ -3,5 +3,5 @@
     let progress3 = new ProgressBar(document.getElementById("p3"));
 
     setInterval(function() {
-        progress1.changePercent(progress1.percent - 10);
-    }, 200);
+        progress1.changePercent(progress1.percent + 0.2);
+    }, 42);

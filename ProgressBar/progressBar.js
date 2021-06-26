@@ -9,6 +9,9 @@ export default class ProgressBar {
         } else {
             this.changeType(this.type);
         }
+        if (this.element.dataset.striped) {
+            this.progress.classList.add("striped");
+        }
         this.element.appendChild(this.progress);
         this.changePercent(parseInt(this.element.dataset.percent));
     }

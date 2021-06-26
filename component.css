@@ -1,13 +1,13 @@
 html {
     --basic: #1976d2;
     --basic-font: white;
-    --basic-transparent: #1976d2a0;
+    --basic-transparent: #3d89d4;
     --warning: #f9a825;
     --warning-font: #303030;
-    --warning-transparent: #f9a825a0;
+    --warning-transparent: #fbc772;
     --error: #b71c1c;
     --error-font: white;
-    --error-transparent: #b71c1ca0;
+    --error-transparent: #da4141;
 }
 
 
@@ -101,16 +101,28 @@ html {
 }
 
 .progress.basic {
+    background-color: var(--basic);
+}
+
+.progress.error {
+    background-color: var(--error);
+}
+
+.progress.warning {
+    background-color: var(--warning);
+}
+
+.progress.basic.striped {
     background: repeating-linear-gradient(-45deg, var(--basic) 25%, var(--basic-transparent) 50%, var(--basic) 75%, var(--basic-transparent));
     background-size: 50px 50px;
 }
 
-.progress.error {
+.progress.error.striped {
     background: repeating-linear-gradient(-45deg, var(--error) 25%, var(--error-transparent) 50%, var(--error) 75%, var(--error-transparent));
     background-size: 50px 50px;
 }
 
-.progress.warning {
+.progress.warning.striped {
     background: repeating-linear-gradient(-45deg, var(--warning) 25%, var(--warning-transparent) 50%, var(--warning) 75%, var(--warning-transparent));
     background-size: 50px 50px;
 }
