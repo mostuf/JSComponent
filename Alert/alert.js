@@ -3,7 +3,7 @@ import css from './alertComponent.js';
 
 export default class Alert {
     static message(message, time = 5000) {
-        this.display(message, "message", time);
+        this.display(message, "basic", time);
     }
 
     static error(message, time = 5000) {
