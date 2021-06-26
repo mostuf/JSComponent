@@ -1,50 +1,56 @@
+/* Alert */
+
 #alert {
-    display: none;
-    padding: 10px;
     position: fixed;
     bottom: 15px;
     right: 15px;
-    border-radius: 8px;
     max-width: 40%;
+}
+
+.alert {
+    display: none;
+    padding: 18px;
+    border-radius: 8px;
     font-size: 1.4rem;
-    padding-right: 35px;
     text-align: justify;
+    margin-bottom: 10px;
 }
 
 @media screen and (min-width: 780px) {
     #alert {
-        max-width: 20%;
+        max-width: 25%;
     }
 }
 
-#alert .fa-times {
-    position: absolute;
-    right: 10px;
-    top: 15px;
+.alert .fa-times {
+    width: 10%;
     font-size: 15px;
+    padding-top: 5px;
     cursor: pointer;
+    text-align: right;
 }
 
-#alert.show {
-    display: block;
+.alert.show {
+    display: flex;
+    flex-direction: row;
 }
 
-#alert.hide {
-    display: block;
+.alert.hide {
+    display: flex;
     animation: hide 3s forwards;
 }
 
-#alert.message {
+.alert.message {
     background-color: #1976d2;
     color: white;
 }
 
-#alert.error {
+.alert.error {
     background-color: #b71c1c;
     color: white;
 }
 
-#alert.warning {
+.alert.warning {
     background-color: #f9a825;
     color: #303030;
 }
@@ -57,3 +63,10 @@
         opacity: 0;
     }
 }
+
+.alert .message {
+    width: 90%;
+}
+
+
+/* ProgressBar */
