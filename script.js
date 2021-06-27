@@ -4,4 +4,6 @@
 
     setInterval(function() {
         progress1.changePercent(progress1.percent + 0.2);
+        progress2.changePercent(progress2.percent + 0.1);
+        progress3.changePercent(progress3.percent + 0.4);
     }, 42);

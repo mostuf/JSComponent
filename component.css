@@ -113,17 +113,17 @@ html {
 }
 
 .progress.basic.striped {
-    background: repeating-linear-gradient(-45deg, var(--basic) 25%, var(--basic-transparent) 50%, var(--basic) 75%, var(--basic-transparent));
+    background: repeating-linear-gradient(45deg, var(--basic) 25%, var(--basic-transparent) 50%, var(--basic) 75%, var(--basic-transparent));
     background-size: 50px 50px;
 }
 
 .progress.error.striped {
-    background: repeating-linear-gradient(-45deg, var(--error) 25%, var(--error-transparent) 50%, var(--error) 75%, var(--error-transparent));
+    background: repeating-linear-gradient(45deg, var(--error) 25%, var(--error-transparent) 50%, var(--error) 75%, var(--error-transparent));
     background-size: 50px 50px;
 }
 
 .progress.warning.striped {
-    background: repeating-linear-gradient(-45deg, var(--warning) 25%, var(--warning-transparent) 50%, var(--warning) 75%, var(--warning-transparent));
+    background: repeating-linear-gradient(45deg, var(--warning) 25%, var(--warning-transparent) 50%, var(--warning) 75%, var(--warning-transparent));
     background-size: 50px 50px;
 }
 
@@ -134,4 +134,48 @@ html {
     100% {
         background-position: 50px 0px;
     }
+}
+
+
+/* Combobox */
+
+.comboList {
+    display: none;
+    border: 1px solid #303030;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.comboList.show {
+    display: block;
+}
+
+.combobox {
+    padding: 12px 6px 12px 6px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 1px solid #30303080;
+    outline: none;
+}
+
+.combobox:focus {
+    border-radius: 8px;
+    border: 1px solid #303030B0;
+}
+
+.comboList [data-option] {
+    display: none;
+}
+
+.comboList .option {
+    padding: 6px;
+}
+
+.comboList .option:not([disabled]):hover {
+    cursor: pointer;
+    background-color: var(--basic);
+    color: var(--basic-font);
+}
+
+.comboList .option[disabled] {
+    cursor: no-drop;
 }

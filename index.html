@@ -1,22 +1,39 @@
 <html>
 
 <head>
-    <script src="../component.js" type="module"></script>
+    <script src="component.js" type="module"></script>
     <script src="script.js" defer></script>
+
     <link rel="stylesheet" href="component.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
 </head>
 
 <body>
-    <div data-component="progress-bar" data-percent="40" data-type="basic"></div>
-    <div data-component="progress-bar" data-percent="40" data-type="warning"></div>
-    <div data-component="progress-bar" data-percent="40" data-type="error"></div>
+    <div style="width:50%">
+        <div data-component="progress-bar" data-percent="20" data-type="basic"></div>
+        <div data-component="progress-bar" data-percent="40" data-type="warning"></div>
+        <div data-component="progress-bar" data-percent="60" data-type="error"></div>
+    </div>
 
-    <div id="p1" data-percent="40" data-type="basic" data-striped="true"></div>
-    <div id="p2" data-percent="40" data-type="warning" data-striped="true"></div>
-    <div id="p3" data-percent="40" data-type="error" data-striped="true"></div>
-    <div data-component="alert"></div>
+    <div id="p1" data-percent="0" data-type="basic" data-striped="true"></div>
+    <div id="p2" data-percent="0" data-type="warning" data-striped="true"></div>
+    <div id="p3" data-percent="0" data-type="error" data-striped="true"></div>
+
+    <div data-component="combobox">
+        <div data-option="javascript"></div>
+        <div data-option="html"></div>
+        <div data-option="css"></div>
+        <div data-option="java"></div>
+        <div data-option="jquery"></div>
+        <div data-option="php"></div>
+        <div data-option="dotnet"></div>
+        <div data-option="pearl"></div>
+        <div data-option="python"></div>
+        <div data-option="sql"></div>
+        <div data-option="ruby"></div>
+    </div>
+    <div data-component="alert "></div>
 
 </body>
 
